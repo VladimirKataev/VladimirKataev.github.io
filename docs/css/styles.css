@@ -12,8 +12,10 @@ body {
 
 /* Style the side navigation */
 .sidenav {
-    height: 100%;
-    width: 300px;
+    display: flex;
+    margin:auto;
+
+
     position: fixed;
     z-index: 1;
     top: 0;
@@ -47,8 +49,8 @@ body {
 
 /* Style the content */
 .content {
-    margin-left: 300px;
-    padding-left: 20px;
+    color: black;
+    margin-left: 100px;
 }
 
 
