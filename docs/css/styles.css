@@ -62,17 +62,12 @@ body {
 
 
 /* Mainmenu's > that rotates 90 degrees*/
-#mainmenu{
-    color: white;
-    display: block;
-}
-#mainmenu::after {
+.sidenav summary::after {
   margin-left: 1ch;
   display: inline-block;
   transition: 0.2s;
-  content: ">";
 }
-details[open] > #mainmenu::after {
+.sidenav details[open] > .sidenav summary::after {
   transform: rotate(90deg);
 }
 
@@ -81,5 +76,5 @@ details[open] > #mainmenu::after {
 /* Style the content */
 .content {
     color: black;
-    margin-left: 100px;
+    margin-left: 120px;
 }
