@@ -5,6 +5,7 @@
 
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #ccc;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -30,7 +31,6 @@ body {
 }
  
 .sidebar a.active {
-  background-color: #04AA6D;
   color: white;
 }
 
@@ -39,11 +39,37 @@ body {
   color: white;
 }
 
+
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
 }
+
+#resumeButton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #999;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #bbb;
+
+}
+
+#resumeButton:hover {background-color: #666}
+
+#resumeButton:active {
+  background-color: #666;
+  box-shadow: 0 5px #888;
+  transform: translateY(4px);
+}
+
 
 @media screen and (max-width: 700px) {
   .sidebar {
